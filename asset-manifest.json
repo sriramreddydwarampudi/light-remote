@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.js": "/light-remote/static/js/main.1a3bcb00.js",
+    "static/js/670.4e5610d4.js": "/light-remote/static/js/670.4e5610d4.js",
+    "favicon.ico": "/light-remote/favicon.ico",
+    "index.html": "/light-remote/index.html",
+    "manifest.json": "/light-remote/manifest.json",
+    "favicon-32.png": "/light-remote/favicon-32.png",
+    "favicon-16.png": "/light-remote/favicon-16.png",
+    "serve.json": "/light-remote/serve.json",
+    "main.1a3bcb00.js.map": "/light-remote/static/js/main.1a3bcb00.js.map",
+    "670.4e5610d4.js.map": "/light-remote/static/js/670.4e5610d4.js.map"
+  },
+  "entrypoints": [
+    "static/js/670.4e5610d4.js",
+    "static/js/main.1a3bcb00.js"
+  ]
+}
