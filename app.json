@@ -5,19 +5,21 @@
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
-      "backgroundColor": "#1a1a2e"
+      "backgroundColor": "#ffffff"
     },
-    "updates": {
-      "fallbackToCacheTimeout": 0
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSBluetoothAlwaysUsageDescription": "This app uses Bluetooth to connect to smart devices.",
+        "NSBluetoothPeripheralUsageDescription": "This app communicates with Bluetooth devices."
+      }
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
     "android": {
-      "package": "com.ram.lightremote",
       "permissions": [
         "BLUETOOTH",
         "BLUETOOTH_ADMIN",
@@ -25,27 +27,18 @@
         "BLUETOOTH_SCAN",
         "ACCESS_FINE_LOCATION"
       ],
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/icon.png",
-        "backgroundColor": "#1a1a2e"
-      }
+      "package": "com.sriram.lightremote"
     },
-    "ios": {
-      "bundleIdentifier": "com.ram.lightremote",
-      "supportsTablet": true,
-      "infoPlist": {
-        "NSBluetoothAlwaysUsageDescription": "This app needs Bluetooth access to control your device.",
-        "NSBluetoothPeripheralUsageDescription": "Bluetooth is required for connection to your hardware."
-      },
-      "buildNumber": "1.0.0"
-    },
-    "plugins": [
-      "expo-build-properties"
-    ],
     "extra": {
       "eas": {
-        "projectId": "46221372-a569-487c-a82a-984622cd93f3"
+        "projectId": "light-remote-public"
       }
-    }
+    },
+    "web": {
+      "bundler": "webpack",
+      "favicon": "./assets/icon.png",
+      "output": "web-build"
+    },
+    "platforms": ["android", "ios", "web"]
   }
 }

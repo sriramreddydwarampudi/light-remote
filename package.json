@@ -4,29 +4,32 @@
   "main": "index.js",
   "scripts": {
     "start": "expo start",
-    "android": "expo run:android",
-    "ios": "expo run:ios",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
     "web": "expo start --web",
-    "build": "expo export:web",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "predeploy": "expo export:web",
+    "deploy": "gh-pages -d web-build -b gh-pages -r https://github.com/sriramreddydwarampudi/light-remote.git"
+  
+ 
   },
   "dependencies": {
-    "@expo/webpack-config": "^19.0.1",
-    "expo": "~54.0.23",
+    "expo": "^54.0.23",
     "expo-build-properties": "~1.0.9",
     "expo-linear-gradient": "^15.0.7",
+    "expo-linking": "^8.0.8",
     "expo-status-bar": "~3.0.8",
-    "react": "^19.1.0",
-    "react-dom": "19.1.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
     "react-native": "^0.81.5",
     "react-native-ble-plx": "^3.5.0",
     "react-native-bluetooth-classic": "^1.73.0-rc.16",
+    "react-native-safe-area-context": "^5.6.2",
     "react-native-web": "^0.21.0"
   },
   "private": true,
   "devDependencies": {
+    "@expo/webpack-config": "^18.0.1",
     "gh-pages": "^6.3.0"
   },
-  "homepage": "https://sriramreddydwarampudi.github.io/light-remote"
+  "homepage": "https://sriramreddydwarampudi.github.io/light-remote/"
 }
